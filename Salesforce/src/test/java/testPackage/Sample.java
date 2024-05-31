@@ -56,6 +56,7 @@ public class Sample extends BaseClass {
 					updations.getSaveButton().click(); 
 					System.out.println("awefgaerger");
 					System.out.println("dsfd");
+					System.out.println("12345678");
 				}else if(currentUrl.contains("lightning/r/Account")) {
 					Thread.sleep(4000);
 					System.out.println("Account url --> "+Helper.getDriver().getCurrentUrl());
