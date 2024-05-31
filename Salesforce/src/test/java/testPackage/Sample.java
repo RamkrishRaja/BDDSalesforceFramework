@@ -23,6 +23,8 @@ public class Sample extends BaseClass {
 	static String parentWindow;
 	static List<String> windID;
 	
+	
+	
 	static Updations updations;
 	
 	public static void main(String[] args) throws Exception {
@@ -52,6 +54,7 @@ public class Sample extends BaseClass {
 					Thread.sleep(4000);
 					updations.getOppStageValue();
 					updations.getSaveButton().click(); 
+					System.out.println("awefgaerger");
 				}else if(currentUrl.contains("lightning/r/Account")) {
 					Thread.sleep(4000);
 					System.out.println("Account url --> "+Helper.getDriver().getCurrentUrl());
