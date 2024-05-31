@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cucumber" time="62.529" tests="7" skipped="0" failures="2" errors="0">
+<testcase classname="Login feature for Salesforce" name="Validating the Login functionality - Example #1.1" time="12.817">
+<system-out><![CDATA[
+Given Chrome or any desier brower should be launched........................passed
+When Salesforce login page opend "https://login.salesforce.com/"............passed
+Then User should see the text box to enter login credentials "Login | Salesforce".passed
+When enter Username as "ramkrish@mastek.com" and Password as "".............passed
+Then clicks on Login button with expected status as "Missing Password"......passed
+Then User should see the Salesforce Home page on successful login status "Missing Password".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login feature for Salesforce" name="Validating the Login functionality - Example #1.2" time="2.892">
+<system-out><![CDATA[
+Given Chrome or any desier brower should be launched........................passed
+When Salesforce login page opend "https://login.salesforce.com/"............passed
+Then User should see the text box to enter login credentials "Login | Salesforce".passed
+When enter Username as "ramkrish@mastek.com" and Password as "Welcome@124567890".passed
+Then clicks on Login button with expected status as "Both Fail".............passed
+Then User should see the Salesforce Home page on successful login status "Both Fail".passed
+]]></system-out>
+</testcase>
+<testcase classname="Login feature for Salesforce" name="Validating the Login functionality - Example #1.3" time="15.893">
+<system-out><![CDATA[
+Given Chrome or any desier brower should be launched........................passed
+When Salesforce login page opend "https://login.salesforce.com/"............passed
+Then User should see the text box to enter login credentials "Login | Salesforce".passed
+When enter Username as "ramkrish@mastek.com" and Password as "Welcome@1234567890".passed
+Then clicks on Login button with expected status as "Pass"..................passed
+Then User should see the Salesforce Home page on successful login status "Pass".passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate Home page features in Salesforce" name="To verify that the user can able to navigate to the Leads object" time="9.499">
+<system-out><![CDATA[
+Given user should be in salesforce home page................................passed
+When user clicks the applauncher............................................passed
+And user should enter leads object name in the applauncer search box........passed
+And clicks object name or press Enter key...................................passed
+Then system should navigate to the Lead records list view page..............passed
+]]></system-out>
+</testcase>
+<testcase classname="Validate Lead conversion page features in Salesforce" name="Verify user can able to create new lead record" time="2.673">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(text(),'New')]&quot;}
+  (Session info: chrome=124.0.6367.91)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6f10c9c1c7f557f59daa3bf0c825eec0, findElement {using=xpath, value=//div[contains(text(),'New')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\RAMAK1~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57812}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57812/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f10c9c1c7f557f59daa3bf0c825eec0">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'New')]"}
+  (Session info: chrome=124.0.6367.91)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6f10c9c1c7f557f59daa3bf0c825eec0, findElement {using=xpath, value=//div[contains(text(),'New')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\RAMAK1~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57812}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57812/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f10c9c1c7f557f59daa3bf0c825eec0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at pageObjects.LeadCreation.getNewButton(LeadCreation.java:40)
+	at stepDefinitions.LeadCreationSteps.clickNew(LeadCreationSteps.java:26)
+	at ✽.user click New button(file:///C:/Users/Ramak1501278/eclipse-workspace/Salesforce/src/test/resources/Features/Scenario3.feature:8)
+]]>
+</failure>
+<system-out><![CDATA[
+Given user should be in salesforce lead list view page......................passed
+When user click New button..................................................failed
+Then New Lead popup should get open.........................................skipped
+And user enters values in all required fields...............................skipped
+And clicks Save button......................................................skipped
+Then new lead should be created.............................................skipped
+When user click the conver button...........................................skipped
+And Convert Lead popup should open..........................................skipped
+And user clicks Convert button..............................................skipped
+Then succes message diolouge box............................................skipped
+Then click Go To Leads......................................................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Account Contact Opportunity" name="Verify Accont, Contact, Opportunity created after Lead get converted" time="17.064">
+<failure type="org.openqa.selenium.NoSuchElementException" message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[@title='Edit Account Number']&quot;}
+  (Session info: chrome=124.0.6367.91)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6f10c9c1c7f557f59daa3bf0c825eec0, findElement {using=xpath, value=//button[@title='Edit Account Number']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\RAMAK1~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57812}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57812/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f10c9c1c7f557f59daa3bf0c825eec0">
+<![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//button[@title='Edit Account Number']"}
+  (Session info: chrome=124.0.6367.91)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [6f10c9c1c7f557f59daa3bf0c825eec0, findElement {using=xpath, value=//button[@title='Edit Account Number']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 124.0.6367.91, chrome: {chromedriverVersion: 124.0.6367.91 (51df0e5e17a8..., userDataDir: C:\Users\RAMAK1~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57812}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57812/devtoo..., se:cdpVersion: 124.0.6367.91, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6f10c9c1c7f557f59daa3bf0c825eec0
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy26.click(Unknown Source)
+	at stepDefinitions.UpdationSteps.accoutRecord(UpdationSteps.java:25)
+	at ✽.Account record open(file:///C:/Users/Ramak1501278/eclipse-workspace/Salesforce/src/test/resources/Features/Scenario4.feature:5)
+]]>
+</failure>
+<system-out><![CDATA[
+Given open Account object...................................................passed
+When Account record open....................................................failed
+Then verify contact created and able to edit the field values...............skipped
+Then verify opportunity created and able edit field values..................skipped
+]]></system-out>
+</testcase>
+<testcase classname="Validate Logout features in Salesforce" name="Verify user can logout from Salesforce" time="0.984">
+<system-out><![CDATA[
+Given user should login to salesforce.......................................passed
+When user clicks profile icon...............................................passed
+And user clicks logout hyper link...........................................passed
+Then salsforce should be logged out successfully............................passed
+]]></system-out>
+</testcase>
+</testsuite>
