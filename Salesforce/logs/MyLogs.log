@@ -1,0 +1,11 @@
+[INFO ] 2024-06-06 11:25:57.361 [main] LoginSteps - Salesforce URL launchedhttps://login.salesforce.com/
+[INFO ] 2024-06-06 11:25:59.143 [main] LoginSteps - Salesforce URL launchedhttps://login.salesforce.com/
+[INFO ] 2024-06-06 11:26:00.543 [main] LoginSteps - Salesforce URL launchedhttps://login.salesforce.com/
+[INFO ] 2024-06-06 11:26:10.459 [main] HomePageSteps - Logged in to Salesforce Successfully
+[INFO ] 2024-06-06 11:26:10.469 [main] HomePageSteps - User in SF home page
+[WARN ] 2024-06-06 11:26:16.166 [main] LeadCreationSteps - Lead page not visiable
+[INFO ] 2024-06-06 11:26:21.003 [main] LeadCreationSteps - Lead record creation page opend
+[INFO ] 2024-06-06 11:26:27.094 [main] LeadCreationSteps - Lead record saved
+[INFO ] 2024-06-06 11:26:37.011 [main] LeadCreationSteps - Lead has been converted
+[INFO ] 2024-06-06 11:26:46.473 [main] UpdationSteps - Window successfully switch to Account Window
+[INFO ] 2024-06-06 11:27:21.102 [main] LogoutSteps - Logged Out form salesforce

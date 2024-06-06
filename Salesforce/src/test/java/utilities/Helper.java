@@ -230,7 +230,7 @@ public class Helper {
 	}
 	//	Explicit Wait
 	//	Fluent Wait
-	
+
 	public static WebElement presenceOfElement(By element) {
 		try {
 			return new WebDriverWait(driver, Duration.ofSeconds(30)).until(ExpectedConditions.presenceOfElementLocated(element));
@@ -275,11 +275,15 @@ public class Helper {
 		w =  new WebDriverWait(driver, Duration.ofSeconds(30));
 		w.until(ExpectedConditions.invisibilityOf(element));
 	} 
-	 
+
 	//	Waits until the specified element contains the given text.
-		public static void waitTillTextToBePresent(WebElement element, String text){
-			w =  new WebDriverWait(driver, Duration.ofSeconds(30));
-			w.until(ExpectedConditions.textToBePresentInElement(element, text));
-		} 
+	public static void waitTillTextToBePresent(WebElement element, String text){
+		w =  new WebDriverWait(driver, Duration.ofSeconds(30));
+		w.until(ExpectedConditions.textToBePresentInElement(element, text));
+	} 
+
+	public static void waitTillPageLoad() {
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(30));
+	}
 }
 

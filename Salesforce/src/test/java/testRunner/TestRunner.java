@@ -11,7 +11,7 @@ import io.cucumber.junit.CucumberOptions;
 		glue = {"stepDefinitions"},
 		//dryRun = false,
 		monochrome=true	,	
-		//publish = true,
+		publish = true,
 		plugin = {"rerun:Failed scenarios/failed_scenario.txt","pretty",
 				"html:target/cucumber-report.html",
 				"io.qameta.allure.cucumber7jvm.AllureCucumber7Jvm",
